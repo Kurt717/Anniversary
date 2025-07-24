@@ -106,10 +106,12 @@ overflow-x:hidden;
     width: 700px;
 }
 .letter h3{
+    font-family: love;
     font-size: 3rem;
     text-align: center;
 }
 .letter p{
+    font-family: love;
     text-align: center;
     font-size: 2.5rem;
     text-align: justify;
@@ -163,4 +165,8 @@ overflow-x:hidden;
     to{
         transform:translateX(-100%);
     }
+}
+@font-face{
+    src: url(font/LovesStory.ttf);
+    font-family: love;
 }
