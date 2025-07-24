@@ -1,6 +1,6 @@
 body{
 margin: 0;
-background-color: rgb(240, 206, 229);
+background: linear-gradient(rgb(255, 187, 187), rgb(255, 255, 255)) ;
 overflow-x:hidden;
 }
 .slide{
@@ -128,13 +128,19 @@ overflow-x:hidden;
 }
 
 
+    
+
 .prev{
     position:absolute;
     left: 0;
+    background-color: rgba(255, 152, 200, 0.822);
+    cursor: pointer;
 }
 .next{
     position:absolute;
     right: 0;
+    background-color: rgba(255, 152, 200, 0.479);
+    cursor: pointer;
 }
 
 .hide{
