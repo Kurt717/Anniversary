@@ -1,0 +1,166 @@
+body{
+margin: 0;
+background-color: rgb(240, 206, 229);
+overflow-x:hidden;
+}
+.slide{
+     margin: 0;
+    height: 150px;
+}
+
+.belt{
+     margin: 0;
+    display:inline-block;
+    
+}
+
+.Kcontainer{
+    margin: 0;
+    animation:  20s slide infinite linear forwards;
+    
+}
+.Econtainer{
+     margin: 0;
+    animation:  30s slide infinite linear forwards;
+    
+}
+.freeze{
+    animation-play-state: paused;
+}
+.beltContainer{
+    height: 180px;
+    display: flex;
+    align-items: center;
+       white-space: nowrap;
+       margin: 0;
+           background-color: hsl(0, 0%, 0%);
+               overflow: hidden;
+}
+.belt img{
+    padding: 3px;
+    margin: 0;
+
+}
+.KEcontainer{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin: 0;
+    padding: 20px 0;
+    background-color: rgba(255, 194, 230, 0.205);
+
+
+}
+.KEwrapper{
+    display: flex;
+    align-items: center;
+
+}
+.KEcontainer .slideS{
+
+    height: 450px;
+    border: 5px solid rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.sideSlides{
+    display: inline-block;
+    opacity: 50%;
+    height: 200px;
+
+
+}
+
+.KEcontainer button{
+    font-size: 50px;
+    height: 100px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.KEcontainer .gif{
+    height: 200px;
+    padding: 0 150px;
+
+}
+
+
+
+.mailContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.letter{
+
+    padding: 30px;
+    background-color: rgb(255, 201, 255);
+    border: 2px solid hsl(300, 32%, 72%);
+    height: 800px;
+    width: 700px;
+}
+.letter h3{
+    font-size: 3rem;
+    text-align: center;
+}
+.letter p{
+    text-align: center;
+    font-size: 2.5rem;
+    text-align: justify;
+}
+.grayout{
+    
+    background-color: hsla(0, 0%, 0%, 0.384);
+    height: 100vh;
+    width: 100vw;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:9;
+}
+
+
+.prev{
+    position:absolute;
+    left: 0;
+}
+.next{
+    position:absolute;
+    right: 0;
+}
+
+.hide{
+    display: none;
+}
+.displaySlide{
+    display: inline-block;
+    position: relative;
+
+}
+
+.openMail{
+    display: inline-block;
+}
+
+.mail{
+    cursor: pointer;
+}
+.showLetter{
+    display: inline-block;
+    position: fixed;
+    z-index: 10;
+}
+@keyframes slide{
+    from {
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(-100%);
+    }
+}
